@@ -22,3 +22,12 @@ function isDevExiste(id_dev) {
     return false
   }
 }
+
+function isEmpresaExiste(nome_empresa)
+{
+  if (document.getElementById(nome_empresa) != null){
+    return true;
+  }else {
+    return false;
+  }
+}
