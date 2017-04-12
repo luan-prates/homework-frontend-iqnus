@@ -6,3 +6,8 @@
     font-family: 'fonte-app';
     src: url("../res/_fonts/Roboto/Roboto-Regular.ttf");
 }
+
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+    background: url('../res/img/iqnus-logo.png') no-repeat 50% 100% ;
+}
