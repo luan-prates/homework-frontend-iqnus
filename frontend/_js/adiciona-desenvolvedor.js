@@ -19,18 +19,16 @@ botao_adicionar.addEventListener("click", function(event){
     var nome_empresa = campo_empresa.value.toLowerCase();
     
     if (isEmpresaExiste(nome_empresa)) {
-      var new_dev = montaDev(id_dev);
+      var new_dev = montaDev(id_dev, campo_nome, campo_idade, campo_time, campo_tec, campo_smoker);
       var tabela = document.getElementById(nome_empresa)
       tabela.innerHTML = tabela.innerHTML + new_dev;
       msgSucesso('alterado');
     } else {
-      nova_empresa = montarEmpresa(nome_empresa, id_dev);
+      nova_empresa = montarEmpresa(nome_empresa, id_dev, campo_nome, campo_idade, campo_time, campo_tec, campo_smoker);
       var tabela = document.querySelector("#tabela_empresas");
       tabela.innerHTML = tabela.innerHTML + nova_empresa;
       msgSucesso('adicionado');
       }
-
-    limpaCampos();
+    limpaCampos(campo_empresa, campo_nome, campo_idade, campo_time, campo_tec, campo_smoker)
     }
- 
   });
