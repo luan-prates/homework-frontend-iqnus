@@ -1,4 +1,4 @@
-function montaDev(id_dev) {
+function montaDev(id_dev, campo_nome, campo_idade, campo_time, campo_tec, campo_smoker) {
   var novo_dev = 
   '<tr id="'+ id_dev +'"' + 'class="tr_dev">'+
     '<td class="info-nome td_dev">'+ campo_nome.value +'</td>'+
