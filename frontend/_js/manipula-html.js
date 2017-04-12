@@ -1,11 +1,4 @@
 var corpo = document.body.innerHTML;
-var formulario = document.querySelector('form');
-
-var botao_alterar =
-  '<div>' +
-    '<button id="btn_alterar" class="alterar">alterar</button>'+
-  '</div>'
-
 var tabela =
   '<section>' +
   '<fieldset id="fieldset-tabela"><legend>Lista de Desenvoldedores</legend>'+
@@ -31,8 +24,8 @@ var tabela =
             '<td class="info-tec td_dev">JavaScript</td>'+
             '<td class="info-smoker td_dev">Sim</td>'+
             '<td class="info-funcoes td_dev">'+
-              '<img class="btnIcon" src="./res/_imgs/edit.png">'+
-              '<img class="btnIcon" src="./res/_imgs/delete.png">'+
+              '<img class="btnIcon" src="./res/img/edit.png">'+
+              '<img class="btnIcon" src="./res/img/delete.png">'+
             '</td>'+
           '</tr>'+
         '</table>'+
@@ -41,6 +34,11 @@ var tabela =
     '</table>'+
   '</fieldset>'+
 '</section>'
-
-formulario.innerHTML = formulario.innerHTML + botao_alterar;
 document.body.innerHTML = corpo + tabela;
+
+var formulario = document.querySelector('form');
+var botao_alterar =
+  '<div>' +
+    '<button id="btn_alterar" class="alterar">alterar</button>'+
+  '</div>'
+formulario.innerHTML = formulario.innerHTML + botao_alterar;
