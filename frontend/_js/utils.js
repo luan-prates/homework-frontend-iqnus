@@ -6,7 +6,7 @@ function adicionarAtributos(identificador_elemento, atributo1, valor1, atributo2
   }
 }
 
-function limpaCampos() {
+function limpaCampos(campo_empresa, campo_nome, campo_idade, campo_time, campo_tec, campo_smoker) {
   campo_empresa.value = "";
   campo_nome.value = "";
   campo_idade.value = "";
@@ -60,4 +60,8 @@ function isSmoker(smoker)
   } else {
     return 'Não';
   }
+}
+
+function msgSucesso(acao) {
+    alert('Registro ' + acao + ' com sucesso!')
 }
