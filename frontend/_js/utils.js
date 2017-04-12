@@ -52,3 +52,12 @@ function isIdadeMaiorqyeZero(campo_idade)
     return false;
  }
 } 
+
+function isSmoker(smoker)
+{
+  if (smoker == 'on'){
+    return 'Sim';
+  } else {
+    return 'Não';
+  }
+}
