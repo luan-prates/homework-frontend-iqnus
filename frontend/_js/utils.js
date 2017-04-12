@@ -14,3 +14,11 @@ function limpaCampos() {
   campo_tec.value = "";
   campo_smoker.value = "";
 }
+
+function isDevExiste(id_dev) {
+  if(document.getElementById(id_dev) != null){
+    return true
+  } else {
+    return false
+  }
+}
