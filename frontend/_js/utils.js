@@ -31,3 +31,13 @@ function isEmpresaExiste(nome_empresa)
     return false;
   }
 }
+
+function isCampoPreenchido(campo)
+{
+  if (campo.value != ""){
+    return true;
+  } else {
+    alert('O campo ' + campo.name + ' não foi preenchido.');
+    return false;
+  }
+}
