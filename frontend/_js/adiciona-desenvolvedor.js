@@ -1,6 +1,8 @@
 criaElemento('script', 'src', './_js/utils.js');
 criaElemento('script', 'src', './_js/monta-desenvolvedor.js');
 criaElemento('script', 'src', './_js/monta-empresa.js');
+criaElemento('script', 'src', './_js/altera-desenvolvedor.js');
+
 
 var botao_adicionar = document.querySelector("button.add");
 botao_adicionar.addEventListener("click", function(event){    
@@ -28,7 +30,9 @@ botao_adicionar.addEventListener("click", function(event){
       var tabela = document.querySelector("#tabela_empresas");
       tabela.innerHTML = tabela.innerHTML + nova_empresa;
       msgSucesso('adicionado');
-      }
-    limpaCampos(campo_empresa, campo_nome, campo_idade, campo_time, campo_tec, campo_smoker)
+    }
+    
+
+    limpaCampos(campo_empresa, campo_nome, campo_idade, campo_time, campo_tec, campo_smoker);
     }
   });

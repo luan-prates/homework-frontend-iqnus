@@ -24,7 +24,7 @@ var tabela =
             '<td class="info-tec td_dev">JavaScript</td>'+
             '<td class="info-smoker td_dev">Sim</td>'+
             '<td class="info-funcoes td_dev">'+
-              '<img class="btnIcon" src="./res/img/edit.png">'+
+              '<img class="btn_Editar" src="./res/img/edit.png">'+
               '<img class="btnIcon" src="./res/img/delete.png">'+
             '</td>'+
           '</tr>'+
@@ -39,6 +39,6 @@ document.body.innerHTML = corpo + tabela;
 var formulario = document.querySelector('form');
 var botao_alterar =
   '<div>' +
-    '<button id="btn_alterar" class="alterar">alterar</button>'+
+    '<button id="btn_alterar" class="alterar" disabled="true">alterar</button>'+
   '</div>'
 formulario.innerHTML = formulario.innerHTML + botao_alterar;
