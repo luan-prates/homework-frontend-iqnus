@@ -1,7 +1,7 @@
 function montarEmpresa(nome_empresa, id_dev) {
   var nova_empresa =
   '<tr class="tr_empresa">'+
-    '<td class="info-empresa">'+campo_empresa.value+'</td>'+
+    '<td class="info-empresa">'+nome_empresa+'</td>'+
     '<td class="info-dev" colspan="6">'+
       '<table class="tabela_dev" id="'+ nome_empresa +'"'+ 'border="0">'+
         '<tr id="'+ id_dev +'"' + 'class="tr_dev">'+
