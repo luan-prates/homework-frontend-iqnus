@@ -16,5 +16,5 @@ function criaElemento(elemento_criado, atributo1,valor1, atributo2,valor2, atrib
 criaElemento('script', 'src', './_js/manipula-html.js');
 criaElemento('script', 'src', './_js/adiciona-desenvolvedor.js');
 
-criaElemento('link', 'rel', 'stylesheet', 'href', '_css/index.css');
-criaElemento('link', 'rel','shortcut icon', 'href', 'res/_imgs/iqnus-favicon.ico');
+criaElemento('link', 'rel', 'stylesheet', 'href', './_css/index.css');
+criaElemento('link', 'rel','shortcut icon', 'href', './res/img/iqnus-favicon.ico');
