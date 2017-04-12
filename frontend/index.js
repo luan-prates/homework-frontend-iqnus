@@ -12,3 +12,7 @@ function criaElemento(elemento_criado, atributo1,valor1, atributo2,valor2, atrib
     document.body.appendChild(elemento);
   }
 }
+
+criaElemento('script', 'src', './_js/manipula-html.js')
+
+adicionaTabela()
