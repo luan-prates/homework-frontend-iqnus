@@ -41,3 +41,14 @@ function isCampoPreenchido(campo)
     return false;
   }
 }
+
+function isIdadeMaiorqyeZero(campo_idade)
+{
+  var idade = parseInt(campo_idade.value);
+  if (idade > 0){
+    return true;
+  } else {
+    alert('A idade informada deve ser um número maior que zero.')
+    return false;
+ }
+} 
