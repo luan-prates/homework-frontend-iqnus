@@ -39,6 +39,6 @@ document.body.innerHTML = corpo + tabela;
 var formulario = document.querySelector('form');
 var botao_alterar =
   '<div>' +
-    '<button id="btn_alterar" class="alterar" disabled="true">alterar</button>'+
+    '<button id="btn_alterar" class="alterar desabilitado" disabled="true">alterar</button>'+
   '</div>'
 formulario.innerHTML = formulario.innerHTML + botao_alterar;
