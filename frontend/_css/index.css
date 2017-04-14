@@ -3,20 +3,122 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
 
 @font-face{
-  font-family: 'fonte-app';
-  src: url("../res/_fonts/Roboto/Roboto-Regular.ttf");
+    font-family: 'fonte-app';
+    src: url("../res/font/Roboto/Roboto-Regular.ttf");
 }
 
 body {
-  font-family: 'Roboto Condensed', sans-serif;
-  background: url('../res/img/iqnus-logo.png') no-repeat 50% 100% ;
+    font-family: 'Roboto Condensed', sans-serif;
+    background: url('../res/img/iqnus-logo.png') no-repeat 50% 200% ;
 }
 
 h1 {
-  font-family: 'fonte-app', sans-serif;
-  padding-left: 1%;
-  margin-top: 1%;
-  color: #fff;
-  background-color: #0a8fc8;
-  border-bottom: 2px #606060 solid;
+    font-family: 'fonte-app', sans-serif;
+    padding-left: 1%;
+    margin-top: 1%;
+    color: #fff;
+    background-color: #0a8fc8;
+    border-bottom: 2px #606060 solid;
+}
+
+div {
+    padding: 1%;
+}
+
+.cadastro {
+    width: 500px;
+    margin-right: 0;
+    background: url('../res/img/developer.png') no-repeat 1% 1% ;
+}
+
+label {
+    margin-top: 0px;
+}
+
+input, select{
+    width: 30%;
+    background-color: rgba(255,255,255,.8);
+}
+
+input:hover {
+    background-color: #dddddd;
+}
+
+button{
+    background-color: rgba(0, 104, 180, 0.91);
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    border: 0px;
+    box-shadow: 1px 1px 1px #999;
+    border-radius: 4px;
+    margin-top: 10px;
+}
+
+button.desabilitado{
+    background-color: rgba(0, 104, 180, 0.51);
+}
+
+/* Estilos da lista de desenvolvedores*/
+fieldset {
+    width: 60%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    border: none;
+    overflow: hidden;
+    top: 70px;
+    left: 40%;
+}
+
+table{
+    border-collapse: collapse;
+    width: 50em;
+    border: 1px solid #666;
+}
+.info-dev{
+    padding: 0px;
+    margin: 0px;
+}
+
+.tabela_dev{
+    border: none;
+}
+thead {
+    background: #ccc url('../res/img/bar.gif') repeat-x left center;
+    border-top: 1px solid #a5a5a5;
+    border-bottom: 1px solid #a5a5a5;
+}
+
+.tr_dev:hover {
+    background-color:#0a8fc8;
+    color: #fff;
+}
+
+thead tr:hover {
+    background-color: transparent;
+    color: inherit;
+}
+
+tr:nth-child(2n+0) {
+    background: #bbcdff;
+}
+
+th {
+    font-weight: normal;
+    text-align: left;
+}
+
+th, td {
+    padding: 0.1em 1em;
+    width: 105px;
+    height: 18px;
+}
+
+.btnIcon{
+    padding-left: 10px;
+    padding-right: 10px;
 }
