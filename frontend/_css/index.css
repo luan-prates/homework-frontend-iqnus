@@ -26,9 +26,10 @@ div {
 }
 
 .cadastro {
-    width: 500px;
+    width: 30%;
     margin-right: 0;
-    background: url('../res/img/developer.png') no-repeat 1% 1% ;
+    background: url('../res/img/developer.png') no-repeat 50% 50%;
+    background-size: 100%;
 }
 
 label {
@@ -58,7 +59,7 @@ button{
     margin-top: 10px;
 }
 
-button.desabilitado{
+.desabilitado{
     background-color: rgba(0, 104, 180, 0.51);
 }
 
