@@ -6,7 +6,16 @@ function adicionarAtributos(identificador_elemento, atributo1, valor1, atributo2
   }
 }
 
-function limpaCampos(campo_empresa, campo_nome, campo_idade, campo_time, campo_tec, campo_smoker) {
+function removerAtributos(identificador_elemento, atributo1, atributo2)
+{
+  document.querySelector(identificador_elemento).removeAttribute(atributo1);
+  if(atributo2 != null) {
+    document.querySelector(identificador_elemento).removeAttribute(atributo2);
+  }
+}
+
+function limpaCampos(campo_empresa, campo_nome, campo_idade, campo_time, campo_tec, campo_smoker) 
+{
   campo_empresa.value = "";
   campo_nome.value = "";
   campo_idade.value = "";
@@ -15,7 +24,8 @@ function limpaCampos(campo_empresa, campo_nome, campo_idade, campo_time, campo_t
   campo_smoker.value = "";
 }
 
-function isDevExiste(id_dev) {
+function isDevExiste(id_dev) 
+{
   if(document.getElementById(id_dev) != null){
     return true
   } else {
@@ -62,6 +72,7 @@ function isSmoker(smoker)
   }
 }
 
-function msgSucesso(acao) {
-    alert('Registro ' + acao + ' com sucesso!')
+function msgSucesso(acao) 
+{
+  alert('Registro ' + acao + ' com sucesso!')
 }
