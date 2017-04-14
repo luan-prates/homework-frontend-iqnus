@@ -11,7 +11,7 @@ function montarEmpresa(nome_empresa, id_dev, campo_nome, campo_idade, campo_time
           '<td class="info-tec td_dev" >'+campo_tec.value+'</td>'+
           '<td class="info-smoker td_dev">'+isSmoker(campo_smoker.value)+'</td>'+
           '<td class="info-funcoes td_dev">'+
-            '<img class="btnIcon" src="./res/img/edit.png">'+
+            '<img class="btn_Editar" src="./res/img/edit.png">'+
             '<img class="btnIcon" src="./res/img/delete.png">'+
           '</td>'+
         '</tr>'+
