@@ -15,6 +15,14 @@ function criaElemento(elemento_criado, atributo1,valor1, atributo2,valor2, atrib
 
 criaElemento('script', 'src', './_js/manipula-html.js');
 criaElemento('script', 'src', './_js/adiciona-desenvolvedor.js');
+criaElemento('script', 'src', './_js/utils.js');
+criaElemento('script', 'src', './_js/monta-desenvolvedor.js');
+criaElemento('script', 'src', './_js/monta-empresa.js');
+criaElemento('script', 'src', './_js/adiciona-evento-editar.js');
+criaElemento('script', 'src', './_js/altera-desenvolvedor.js');
+criaElemento('script', 'src', './_js/remove-desenvolvedor.js');
+criaElemento('script', 'src', './_js/serializar-elementos.js');
+
 
 criaElemento('link', 'rel', 'stylesheet', 'href', './_css/index.css');
 criaElemento('link', 'rel','shortcut icon', 'href', './res/img/iqnus-favicon.ico');

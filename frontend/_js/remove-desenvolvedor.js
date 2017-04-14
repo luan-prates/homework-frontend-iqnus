@@ -11,4 +11,3 @@ function adicionaEventoDelete(id)
     tabela_dev.deleteRow(index_dev);
   });
 }
-
